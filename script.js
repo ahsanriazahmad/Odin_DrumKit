@@ -21,13 +21,13 @@
 
 function playSound() {
   //console.log(e);
-  const audio = document.querySelector(`audio[data-key = 65]`);
+  const audio = document.querySelector(`audio[id = value]`);
   if (!audio) return; //stop the function from running all together
   audio.currentTime = 0; // rewind to the start of the audio
   audio.play();
 }
 
-document.addEventListener("click", playSound);
+window.addEventListener("click", playSound);
 // window.addEventListener("click", (e) => {
 //   console.log(e);
 // });
