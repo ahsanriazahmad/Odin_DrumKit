@@ -30,8 +30,8 @@ function playSound(e) {
   audio.play();
 }
 
-const keys = document.querySelectorAll(".key");
-keys.forEach((element) => {
+const mouseKeys = document.querySelectorAll(".key");
+mouseKeys.forEach((element) => {
   element.addEventListener("click", () => {
     // Fetch the key for the audio object that matches the key of
     // this element
@@ -56,8 +56,8 @@ keys.forEach((element) => {
   });
 });
 
-const keys = document.querySelectorAll(".key");
-keys.forEach((element) => {
+const touchKeys = document.querySelectorAll(".key");
+touchKeys.forEach((element) => {
   element.addEventListener("touchStart", () => {
     // Fetch the key for the audio object that matches the key of
     // this element
